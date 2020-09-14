@@ -22,7 +22,7 @@ from cowpy import cow
 from userge import userge, Message
 
 
-@userge.on_cmd(r"(?:Kek|:/)$",
+@userge.on_cmd(r"(?:kek|:/)$",
 
                about={'header': "Check yourself, hint: `:/`"})
 
