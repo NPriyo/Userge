@@ -26,13 +26,13 @@ from userge import userge, Message
 
                about={'header': "Check yourself, hint: `:/`"}, name='Kek',
 
-               trigger='', allow_via_bot=True)
+               trigger='', allow_via_bot=False)
 
 async def kek_(message: Message):
 
     """kek"""
 
-    kek = ["/", "\\"]
+    .kek = ["/", "\\"]
 
     for i in range(1, 9):
 
