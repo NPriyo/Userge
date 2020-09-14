@@ -24,15 +24,13 @@ from userge import userge, Message
 
 @userge.on_cmd(r"(?:Kek|:/)$",
 
-               about={'header': "Check yourself, hint: `:/`"}, name='Kek',
-
-               trigger='', allow_via_bot=False)
+               about={'header': "Check yourself, hint: `:/`"})
 
 async def kek_(message: Message):
 
     """kek"""
 
-    .kek = ["/", "\\"]
+    kek = ["/", "\\"]
 
     for i in range(1, 9):
 
