@@ -90,25 +90,25 @@ async def facepalm_(message: Message):
     await check_and_send(message, "🤦‍♂")
 
     
-    userge.on_cmd("a$", about={'header': "a :P"})
+@userge.on_cmd("a$", about={'header': "a :P"})
 async def a_(message: Message):
     """a"""
     await check_and_send(message, "Abe saale! 🤬🤬🤬")
 
 
-userge.on_cmd("t$", about={'header': "t :P"})
+@userge.on_cmd("t$", about={'header': "t :P"})
 async def t_(message: Message):
     """t"""
     await check_and_send(message, "Tameez se! 😡😡😡")
 
 
-userge.on_cmd("m$", about={'header': "m :P"})
+@userge.on_cmd("m$", about={'header': "m :P"})
 async def m_(message: Message):
     """m"""
     await check_and_send(message, "Maaf karna. Gusse mein thoda idhar udhar chala jaata hoon 🙏🙏🙏")
 
 
-userge.on_cmd("maro$", about={'header': "maro :P"})
+@userge.on_cmd("maro$", about={'header': "maro :P"})
 async def maro_(message: Message):
     """maro"""
     await check_and_send(message, "Oh bhai maaro mujhe maaro 😭😭😭")
