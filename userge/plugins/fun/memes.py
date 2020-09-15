@@ -38,9 +38,8 @@ async def kek_(message: Message):
 
         await message.try_to_edit(":" + kek[i % 2])
 
-@userge.on_cmd(r"(?:Lol|-_-)$",
-               about={'header': "Check yourself, hint: `-_-`"}, name='Lol',
-               trigger='', allow_via_bot=False)
+@userge.on_cmd(r"(?:lol|-_-)$",
+               about={'header': "Check yourself, hint: `-_-`"})
 async def lol_(message: Message):
     """lol"""
     lol = "-_ "
@@ -51,9 +50,8 @@ async def lol_(message: Message):
         await message.try_to_edit(lol, parse_mode="html")
 
 
-@userge.on_cmd(r"(?:Fun|;_;)$",
-               about={'header': "Check yourself, hint: `;_;`"}, name="Fun",
-               trigger='', allow_via_bot=False)
+@userge.on_cmd(r"(?:fun|;_;)$",
+               about={'header': "Check yourself, hint: `;_;`"})
 async def fun_(message: Message):
     """fun"""
     fun = ";_ "
@@ -64,8 +62,7 @@ async def fun_(message: Message):
         await message.try_to_edit(fun, parse_mode="html")
 
 
-@userge.on_cmd("Oof$", about={'header': "Ooooof"},
-               trigger='', allow_via_bot=False)
+@userge.on_cmd("oof$", about={'header': "Ooooof"})
 async def Oof_(message: Message):
     """Oof"""
     Oof = "Oo "
@@ -74,8 +71,7 @@ async def Oof_(message: Message):
         await message.try_to_edit(Oof)
 
 
-@userge.on_cmd("Hmm$", about={'header': "Hmmmmm"},
-               trigger='', allow_via_bot=False)
+@userge.on_cmd("hmm$", about={'header': "Hmmmmm"})
 async def Hmm_(message: Message):
     """Hmm"""
     Hmm = "Hm "
